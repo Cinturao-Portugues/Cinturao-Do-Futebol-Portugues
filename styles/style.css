@@ -1,0 +1,261 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f4f4f9;
+    --text-color: #333;
+    --hover-color: #f1f1f1;
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --header-font-size: 24px;
+    --nav-link-color: #ffffff;
+    --nav-link-hover-color: #d4d4d4;
+    --footer-bg-color: #007bff;
+    --footer-text-color: #ffffff;
+    --border-color: #ddd;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: var(--header-font-size);
+}
+
+/* Navbar */
+nav.navbar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--nav-link-color);
+}
+
+nav.navbar a {
+    color: var(--nav-link-color);
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav.navbar a:hover {
+    color: var(--nav-link-hover-color);
+    text-decoration: underline;
+}
+
+nav.navbar .nav-item-active {
+    color: #ccc;
+}
+
+/* Table */
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* Team Logo */
+.team-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Winner Section */
+.most-recent-winner {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-left: 5px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.most-recent-winner img {
+    margin-right: 10px;
+}
+
+.most-recent-winner h3 {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav.navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .team-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .winner-container img.team-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .team-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .winner-container img.team-logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"] {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+button:focus, input[type="button"]:focus, input[type="submit"]:focus {
+    outline: 2px dashed var(--focus-color);
+    outline-offset: 4px;
+}
+
+/* Toggle Button */
+.toggle-button {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle-button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
