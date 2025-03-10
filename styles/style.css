@@ -125,6 +125,18 @@ tbody tr:hover {
     vertical-align: middle;
 }
 
+.team-initials {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Winner Section */
 .most-recent-winner {
     margin: 20px 0;
@@ -186,6 +198,38 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Loading Spinner */
+#loading {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
 }
 
 /* Responsive Design */
@@ -266,22 +310,4 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover {
 button:focus, input[type="button"]:focus, input[type="submit"]:focus {
     outline: 2px dashed var(--focus-color);
     outline-offset: 4px;
-}
-
-/* Toggle Button */
-.toggle-button {
-    background-color: var(--primary-color);
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.toggle-button:hover {
-    background-color: darken(var(--primary-color), 10%);
 }

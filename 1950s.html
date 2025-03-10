@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cinturão do Futebol Português - Acompanhe a história do futebol português na década de 1950.">
+    <meta name="keywords" content="futebol português, cinturão, futebol, Portugal, história do futebol, 1950s">
     <title>Cinturão do Futebol Português - 1950s</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
             <a class="navbar-brand text-white" href="index.html">Início</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="decade-nav">
                     <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1900s.html">1900s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1910s.html">1910s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1920s.html">1920s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1930s.html">1930s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1940s.html">1940s</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="1950s.html">1950s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1960s.html">1960s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1970s.html">1970s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1980s.html">1980s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="1990s.html">1990s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="2000s.html">2000s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="2010s.html">2010s</a></li>
-                    <li class="nav-item"><a class="nav-link" href="2020s.html">2020s</a></li>
+                    <!-- Decades will be dynamically inserted here -->
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="text-center mt-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="container mt-4">
         <h1 class="text-center mb-4 text-primary">Cinturão do Futebol Português - 1950s</h1>
         <div class="table-responsive">
@@ -45,7 +45,7 @@
                         <th>Competição</th>
                         <th>Equipa</th>
                         <th>Golos</th>
-                        <th></th> <!-- Blank column -->
+                        <th></th>
                         <th>Golos</th>
                         <th>Equipa</th>
                         <th>Detentor Atual</th>
@@ -57,12 +57,19 @@
             </table>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-primary text-white text-center py-3">
         <div class="container">
             <p class="mb-0">Cinturão do Futebol Português - Rodrigo Nunes (2024)</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary" title="Voltar ao topo">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>

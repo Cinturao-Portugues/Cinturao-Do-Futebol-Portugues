@@ -1,101 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cinturão do Futebol Português</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <div class="container">
-                <a class="navbar-brand text-white" href="index.html">Início</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1900s.html">1900s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1910s.html">1910s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1920s.html">1920s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1930s.html">1930s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1940s.html">1940s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1950s.html">1950s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1960s.html">1960s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1970s.html">1970s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1980s.html">1980s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="1990s.html">1990s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="2000s.html">2000s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="2010s.html">2010s</a></li>
-                        <li class="nav-item"><a class="nav-link" href="2020s.html">2020s</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container mt-4">
-            <div id="most-recent-winner" class="most-recent-winner mb-4">
-                <div class="winner-container">
-                    <img src="path/to/logo.png" alt="Team Logo" class="team-logo"> </img>
-                    <div>
-                        <h3 id="winner-team">Team Name</h3>
-                        <p id="winner-details">Winner Details</p>
-                    </div>
-                </div>
-            </div>
-            <div class="upcoming-match mb-4">
-                <h2 class="text-center mb-4 text-primary">Próximo Jogo</h2>
-                <div class="match-details bg-light p-4 rounded shadow">
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <img src="images/teams/Casa_Pia_Atletico_Clube.png" alt="[Team 1 Name]" class="team-logo-large">
-                            <h4>Casa Pia Atlético Clube</h4>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="images/teams/Sporting_Clube_De_Portugal.png" alt="[Team 2 Name]" class="team-logo-large">
-                            <h4>Sporting Clube de Portugal</h4>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <p><strong>Data:</strong> 09-03-2025</p>
-                        <p><strong>Hora:</strong> 18:00</p>
-                        <p><strong>Local:</strong> Estádio Municipal de Rio Maior, Rio Maior, Portugal</p>
-                    </div>
-                </div>
-            </div>
-            <h1>Jogos Recentes</h1>
-            <div class="table-responsive">
-                <table id="recent-matches-table" class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Data</th>
-                            <th>Competição</th>
-                            <th>Equipa</th>
-                            <th>Golos</th>
-                            <th></th> <!-- Blank column -->
-                            <th>Golos</th>
-                            <th>Equipa</th>
-                            <th>Detentor Atual</th>
-                        </tr>
-                    </thead>
-                    <tbody id="recent-matches-body">
-                        <!-- Recent matches will be inserted here dynamically -->
-                    </tbody>
-                </table>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cinturão do Futebol Português - Acompanhe a história do futebol português através do conceito único do Cinturão.">
+    <meta name="keywords" content="futebol português, cinturão, futebol, Portugal, história do futebol">
+    <meta property="og:title" content="Cinturão do Futebol Português">
+    <meta property="og:description" content="Acompanhe a história do futebol português através do conceito único do Cinturão.">
+    <meta property="og:image" content="https://yourwebsite.com/images/logo.png">
+    <title>Cinturão do Futebol Português</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">Início</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" id="decade-nav">
+                    <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
+                    <!-- Decades will be dynamically inserted here -->
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="text-center mt-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <footer class="bg-primary text-white text-center py-3">
-            <div class="container">
-                <p class="mb-0">Cinturão do Futebol Português - Rodrigo Nunes (2024)</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Most Recent Winner Section -->
+        <div id="most-recent-winner" class="most-recent-winner mb-4">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+
+        <!-- Upcoming Match Section -->
+        <div class="upcoming-match mb-4">
+            <h2 class="text-center mb-4 text-primary">Próximo Jogo</h2>
+            <div class="match-details bg-light p-4 rounded shadow">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="images/teams/Casa_Pia_Atletico_Clube.png" alt="Casa Pia Atlético Clube" class="team-logo-large">
+                        <h4>Casa Pia Atlético Clube</h4>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="images/teams/Sporting_Clube_De_Portugal.png" alt="Sporting Clube de Portugal" class="team-logo-large">
+                        <h4>Sporting Clube de Portugal</h4>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p><strong>Data:</strong> 09-03-2025</p>
+                    <p><strong>Hora:</strong> 18:00</p>
+                    <p><strong>Local:</strong> Estádio Municipal de Rio Maior, Rio Maior, Portugal</p>
+                </div>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+        </div>
+
+        <!-- Recent Matches Section -->
+        <h1>Jogos Recentes</h1>
+        <div class="table-responsive">
+            <table id="recent-matches-table" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Competição</th>
+                        <th>Equipa</th>
+                        <th>Golos</th>
+                        <th></th>
+                        <th>Golos</th>
+                        <th>Equipa</th>
+                        <th>Detentor Atual</th>
+                    </tr>
+                </thead>
+                <tbody id="recent-matches-body">
+                    <!-- Recent matches will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">Cinturão do Futebol Português - Rodrigo Nunes (2024)</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
 </html>
